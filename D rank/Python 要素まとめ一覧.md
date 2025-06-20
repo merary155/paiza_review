@@ -1,11 +1,14 @@
-.sort()  #受け取った数字・アルファベットを昇順にする、ただし数字は数字だけ、文字は文字だけに限る
-``` python
-nums = [4, 2, 9, 1]
-nums.sort()
-print(nums)  # [1, 2, 4, 9]
-```
-``` python
-words = ['banana', 'apple', 'cherry']
-words.sort()
-print(words)  # ['apple', 'banana', 'cherry']
-```
+### .sort() 
+##### 数字だけ、または文字列だけのリストに使う
+
+nums = [4, 2, 9, 1]<br>
+nums.sort()<br>
+print(nums)  # [1, 2, 4, 9]<br>
+
+words = ['banana', 'apple', 'cherry']<br>
+words.sort()<br>
+print(words)  # ['apple', 'banana', 'cherry']<br>
+
+##### 数字と文字列が混ざるとエラーになる
+##### mixed = [3, 'apple', 5]
+##### mixed.sort()  # TypeErrorになる
