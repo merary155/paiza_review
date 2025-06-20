@@ -26,5 +26,19 @@ A = list(map(int, input().split()))  # 数列Aを2行目で受け取る
 Q = int(input())                 # 要素数Qを3行目で受け取る
 B = list(map(int, input().split()))  # 数列Bを4行目で受け取る
 
-for i in range(Q):
+for i in range(Q): #繰り返すrangeはQであって、Bではない。Bはリストだからエラーになる
     print(A[B[i] - 1])  # B_i番目の値を出力（1-index調整に-1を忘れずに）
+```
+
+## 別解
+
+```python
+N = int(input())                 # 要素数Nを1行目で受け取る
+A = [int(x) for x in input().split()]  # 数列Aを2行目で受け取る
+Q = int(input())                 # 要素数Qを3行目で受け取る
+B = [int(y) for y in input().split()]  # 数列Bを4行目で受け取る
+
+for i in range(Q):
+    print(A[B[i]-1])
+```
+
