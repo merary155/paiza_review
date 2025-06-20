@@ -12,3 +12,5 @@ print(words)  # ['apple', 'banana', 'cherry']<br>
 ##### 数字と文字列が混ざるとエラーになる
 ##### mixed = [3, 'apple', 5]
 ##### mixed.sort()  # TypeErrorになる
+
+##### 降順の時は"reverse=True"を()に入れるだけ
